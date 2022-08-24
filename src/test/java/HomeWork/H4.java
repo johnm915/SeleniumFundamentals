@@ -41,6 +41,11 @@ public class H4 extends BaseTest {
             System.out.println(driver.findElement(By.xpath
                     ("//div[3]/div[1]/div[2]/div["+ i + "]/div[1]/div["+ givenColum + "]")).getText());
     }
+    @AfterEach
+    void tearDown()
+    {
+        driver.quit();
+    }
 }
 
 
